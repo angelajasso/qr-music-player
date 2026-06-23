@@ -1,0 +1,83 @@
+/* css/styles.css */
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+min-height: 100vh;
+display: grid;
+place-items: center;
+padding: 2rem;
+font-family: system-ui, sans-serif;
+background: #111827;
+color: #f9fafb;
+}
+
+.player {
+width: min(100%, 600px);
+}
+
+.player__header {
+text-align: center;
+margin-bottom: 2rem;
+}
+
+.player__title {
+font-size: 2rem;
+margin-bottom: 0.5rem;
+}
+
+.player__description {
+color: #9ca3af;
+}
+
+.player__card {
+padding: 2rem;
+border: 1px solid #374151;
+border-radius: 1rem;
+background: #1f2937;
+}
+
+.player__upload {
+margin-bottom: 1.5rem;
+}
+
+.player__label {
+display: block;
+margin-bottom: 0.75rem;
+}
+
+.player__input {
+width: 100%;
+}
+
+.player__info {
+margin-bottom: 1.5rem;
+}
+
+.player__filename {
+color: #9ca3af;
+}
+
+.player__controls {
+display: flex;
+gap: 1rem;
+}
+
+.player__button {
+flex: 1;
+padding: 0.875rem;
+border: none;
+border-radius: 0.75rem;
+cursor: pointer;
+font: inherit;
+}
+
+.player__button:hover {
+opacity: 0.9;
+}

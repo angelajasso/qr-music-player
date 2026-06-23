@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Music Player</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <main class="player">
+
+    <header class="player__header">
+      <h1 class="player__title">QR Music Player</h1>
+
+      <p class="player__description">
+        Generate, scan and play music through QR codes.
+      </p>
+    </header>
+
+    <section class="player__card">
+
+      <div class="player__upload">
+        <label
+          for="audio-file"
+          class="player__label"
+        >
+          Select an audio file
+        </label>
+
+        <input
+          type="file"
+          id="audio-file"
+          class="player__input"
+          accept="audio/*"
+        >
+      </div>
+
+      <div class="player__info">
+        <p class="player__filename">
+          No file selected
+        </p>
+      </div>
+
+      <div class="player__controls">
+
+        <button
+          type="button"
+          class="player__button"
+        >
+          Play
+        </button>
+
+        <button
+          type="button"
+          class="player__button"
+        >
+          Pause
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="./js/app.js"></script>
+
+</body>
+</html>
